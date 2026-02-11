@@ -1,0 +1,317 @@
+.checkout-page {
+  min-height: calc(100vh - 80px);
+  padding: 2rem 0;
+}
+
+.page-title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+.checkout-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--border);
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.progress-step.active .step-number {
+  background: var(--secondary);
+  color: white;
+  transform: scale(1.1);
+}
+
+.step-label {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.progress-step.active .step-label {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.progress-line {
+  width: 100px;
+  height: 2px;
+  background: var(--border);
+  margin: 0 1rem;
+}
+
+.checkout-content {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.checkout-main {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+.step-content h2 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.payment-methods {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.payment-method {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.payment-method:hover {
+  border-color: var(--primary);
+  transform: translateX(4px);
+}
+
+.payment-method.selected {
+  border-color: var(--secondary);
+  background: rgba(255, 68, 68, 0.05);
+}
+
+.payment-icon {
+  font-size: 2rem;
+}
+
+.payment-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.payment-info p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.yucho-info {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  border-left: 4px solid var(--secondary);
+}
+
+.yucho-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.bank-details {
+  background: white;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.bank-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.bank-row:last-child {
+  border-bottom: none;
+}
+
+.bank-label {
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.bank-value {
+  font-weight: 700;
+  color: var(--primary);
+  font-family: 'Courier New', monospace;
+}
+
+.bank-note {
+  color: var(--secondary);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.confirmation-section {
+  background: var(--bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.confirmation-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.confirmation-section p {
+  margin: 0.25rem 0;
+  color: var(--text);
+}
+
+.step-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.checkout-sidebar {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+.cart-summary h3 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.cart-items {
+  margin: 1.5rem 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.cart-item-info h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.qty-btn {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--border);
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.qty-btn:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.cart-item-price {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  border-top: 2px solid var(--primary);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.total-price {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+  color: var(--secondary);
+}
+
+.empty-cart {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.empty-cart h2 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.empty-cart p {
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 968px) {
+  .checkout-content {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-sidebar {
+    position: static;
+  }
+
+  .progress-line {
+    width: 50px;
+  }
+
+  .step-label {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,217 @@
+.orders-page {
+  min-height: calc(100vh - 80px);
+  padding: 2rem 0;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.order-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--shadow);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.order-card:hover {
+  box-shadow: 0 4px 16px var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background: var(--bg);
+  border-bottom: 2px solid var(--border);
+}
+
+.order-id {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.25rem;
+}
+
+.order-date {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.order-status {
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-pending {
+  background: rgba(255, 193, 7, 0.2);
+  color: #f57c00;
+}
+
+.status-processing {
+  background: rgba(33, 150, 243, 0.2);
+  color: #1976d2;
+}
+
+.status-shipped {
+  background: rgba(156, 39, 176, 0.2);
+  color: #7b1fa2;
+}
+
+.status-delivered {
+  background: rgba(76, 175, 80, 0.2);
+  color: #388e3c;
+}
+
+.status-cancelled {
+  background: rgba(244, 67, 54, 0.2);
+  color: #d32f2f;
+}
+
+.order-body {
+  padding: 1.5rem;
+}
+
+.order-items {
+  margin-bottom: 1.5rem;
+}
+
+.order-items h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.order-item {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.item-name {
+  font-weight: 500;
+}
+
+.item-quantity {
+  color: var(--text-light);
+}
+
+.item-price {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.order-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.detail-section h4 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.detail-section p {
+  color: var(--text);
+  font-size: 0.95rem;
+  margin: 0.25rem 0;
+}
+
+.tracking-section {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--secondary);
+}
+
+.tracking-number {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 0.75rem 0;
+}
+
+.tracking-icon {
+  font-size: 2rem;
+}
+
+.tracking-code {
+  font-family: 'Courier New', monospace;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 2px;
+}
+
+.tracking-note {
+  color: var(--text-light);
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.order-footer {
+  padding: 1.5rem;
+  background: var(--bg);
+  border-top: 2px solid var(--border);
+  text-align: right;
+}
+
+.order-total {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.8rem;
+  color: var(--secondary);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.no-orders {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--text-light);
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .order-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .order-item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .order-details {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,44 @@
+graph TD
+    A[Start: Landing Page] --> B[Xem 2 loại kính cường lực]
+    B --> C{Thêm vào giỏ hàng}
+    C --> D[Giỏ hàng có sản phẩm]
+    D --> E[Click Checkout]
+    E --> F[Step 1: Nhập thông tin giao hàng]
+    F --> G[Tên, SĐT, Địa chỉ tại Nhật]
+    G --> H[Step 2: Chọn phương thức thanh toán]
+    H --> I{着払い hay 銀行振込?}
+    
+    I -->|着払い| J[Tiếp tục]
+    I -->|銀行振込| K[Hiển thị thông tin Yucho]
+    K --> L[記号: 12345<br/>番号: 67890123<br/>口座名義: キングコング]
+    L --> J
+    
+    J --> M{User đã đăng nhập?}
+    M -->|Chưa| N[Redirect to Login/Register]
+    N --> O[Đăng ký/Đăng nhập]
+    O --> P[Step 3: Xác nhận đơn hàng]
+    
+    M -->|Rồi| P
+    P --> Q[Tạo đơn hàng trong Firestore]
+    Q --> R[Redirect: 注文履歴]
+    R --> S[Hiển thị đơn hàng]
+    S --> T[Status: 処理中]
+    T --> U[Chờ Admin xử lý]
+    
+    U --> V[Admin Dashboard]
+    V --> W[Admin xem đơn hàng mới]
+    W --> X[Cập nhật status: 発送準備中]
+    X --> Y[Nhập mã vận đơn Yamato/Yubin]
+    Y --> Z[Cập nhật status: 発送済み]
+    Z --> AA[User refresh 注文履歴]
+    AA --> AB[Thấy mã vận đơn]
+    AB --> AC[Tracking: 123456789012]
+    AC --> AD[Status: 発送済み → 配達完了]
+    AD --> AE[End: Hoàn thành]
+    
+    style A fill:#e1f5e1
+    style AE fill:#ffe1e1
+    style K fill:#fff3cd
+    style L fill:#fff3cd
+    style V fill:#d1ecf1
+    style AB fill:#d4edda
