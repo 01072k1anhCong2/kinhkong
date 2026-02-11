@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/kinhkong/static/css/main.efe26ddd.css",
-    "main.js": "/kinhkong/static/js/main.f03bdca8.js",
+    "main.css": "/kinhkong/static/css/main.57722f95.css",
+    "main.js": "/kinhkong/static/js/main.86ecd848.js",
     "index.html": "/kinhkong/index.html",
-    "main.efe26ddd.css.map": "/kinhkong/static/css/main.efe26ddd.css.map",
-    "main.f03bdca8.js.map": "/kinhkong/static/js/main.f03bdca8.js.map"
+    "main.57722f95.css.map": "/kinhkong/static/css/main.57722f95.css.map",
+    "main.86ecd848.js.map": "/kinhkong/static/js/main.86ecd848.js.map"
   },
   "entrypoints": [
-    "static/css/main.efe26ddd.css",
-    "static/js/main.f03bdca8.js"
+    "static/css/main.57722f95.css",
+    "static/js/main.86ecd848.js"
   ]
 }
