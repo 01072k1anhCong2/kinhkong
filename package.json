@@ -2,7 +2,8 @@
   "name": "kingkong-shop",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://01072k1anhCong2.github.io/kingkong-shop",
+  "homepage": "https://01072k1anhcong2.github.io/kinhkong",
+
 
   "dependencies": {
     "firebase": "^10.7.1",

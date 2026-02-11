@@ -73,6 +73,8 @@
 .admin-table {
   width: 100%;
   border-collapse: collapse;
+  min-width: 900px;   /* bảng luôn đủ rộng */
+  white-space: nowrap; /* chữ không xuống dòng */
 }
 
 .admin-table thead {

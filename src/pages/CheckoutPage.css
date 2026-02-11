@@ -88,6 +88,21 @@
   letter-spacing: 1px;
 }
 
+/* ===== FORM FIX ===== */
+.form-group {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.form-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+/* ===== PAYMENT ===== */
 .payment-methods {
   display: grid;
   gap: 1rem;
@@ -129,6 +144,7 @@
   font-size: 0.9rem;
 }
 
+/* ===== BANK INFO ===== */
 .yucho-info {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   padding: 1.5rem;
@@ -178,6 +194,7 @@
   margin-top: 0.5rem;
 }
 
+/* ===== CONFIRMATION ===== */
 .confirmation-section {
   background: var(--bg);
   padding: 1.5rem;
@@ -207,6 +224,7 @@
   width: 100%;
 }
 
+/* ===== SIDEBAR ===== */
 .checkout-sidebar {
   position: sticky;
   top: 100px;
@@ -298,9 +316,15 @@
   margin-bottom: 2rem;
 }
 
+/* ===== TABLET ===== */
 @media (max-width: 968px) {
   .checkout-content {
     grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .checkout-main {
+    padding: 1.5rem;
   }
 
   .checkout-sidebar {
@@ -313,5 +337,48 @@
 
   .step-label {
     font-size: 0.8rem;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+  .checkout-page {
+    padding: 1rem 0;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .checkout-main {
+    padding: 1rem;
+  }
+
+  .step-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .progress-line {
+    width: 30px;
+  }
+
+  .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .step-buttons {
+    flex-direction: column;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .cart-item-price {
+    align-self: flex-end;
   }
 }
