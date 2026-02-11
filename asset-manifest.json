@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kingkong-shop/static/css/main.efe26ddd.css",
+    "main.js": "/kingkong-shop/static/js/main.bcd5a82c.js",
+    "index.html": "/kingkong-shop/index.html",
+    "main.efe26ddd.css.map": "/kingkong-shop/static/css/main.efe26ddd.css.map",
+    "main.bcd5a82c.js.map": "/kingkong-shop/static/js/main.bcd5a82c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.efe26ddd.css",
+    "static/js/main.bcd5a82c.js"
+  ]
+}
