@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/kinhkong/static/css/main.efe26ddd.css",
-    "main.js": "/kinhkong/static/js/main.c9a7f3b8.js",
+    "main.js": "/kinhkong/static/js/main.f03bdca8.js",
     "index.html": "/kinhkong/index.html",
     "main.efe26ddd.css.map": "/kinhkong/static/css/main.efe26ddd.css.map",
-    "main.c9a7f3b8.js.map": "/kinhkong/static/js/main.c9a7f3b8.js.map"
+    "main.f03bdca8.js.map": "/kinhkong/static/js/main.f03bdca8.js.map"
   },
   "entrypoints": [
     "static/css/main.efe26ddd.css",
-    "static/js/main.c9a7f3b8.js"
+    "static/js/main.f03bdca8.js"
   ]
 }
